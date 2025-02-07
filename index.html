@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="mjicon.png" type="image/x-icon"> 
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    ITPS205
+  </header>
+
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="#home">HOME</a></li>
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+      <li><a href="#hobbies">HOBBIES</a></li>
+    </ul>
+    
+    <div class="hamburger" id="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </nav>
+
+  <div class="container">
+    <section id="about" class="card">
+      <h2>ABOUT ME</h2>
+      <p>PHOTO OF ME.</p>
+      <img src="akoito.png" alt="A portrait of Mark Jayson D. Ramilo" class="card-img">
+      <p>Hello! I'm Mark Jayson D. Ramilo, a 21-year-old second-year student currently pursuing a Bachelor of Science in Information Technology. I take pride in being a prudent individual who values thoughtful decision-making. Respect is at the core of who I am, as I firmly believe in treating others with kindness and understanding. I'm also someone people can rely on, always ready to lend a helping hand whenever needed.</p>
+    </section>
+
+
+    <section id="hobbies" class="card">
+      <h2>HOBBIES</h2>
+      <p>Title Description, Dec 8, 2004</p>
+      <img src="yi.png" alt="Master Yi from League of Legends" class="card-img">
+      <p>One of the hobbies I truly enjoy in my spare time is playing League of Legends. It serves as both a source of entertainment and a way for me to unwind and relieve stress. The game offers an exciting, immersive experience that challenges my strategic thinking and decision-making skills. Among the many champions in the game, Master Yi stands out as one of my favorites.</p>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>CONTACT</h2> 
+      <img src="contact.png" alt="A portrait of Mark Jayson D. Ramilo" class="card-img">
+      <p>Phone No: 09912559028</p>
+      <p>Gmail Account: ramilomarkjayson149@gmail.com</p>
+      <p>Facebook Account: Mj Ramilo</p>
+     <h2>Just call my number and I'll be there .</h2>
+    </section>
+
+    
+  </div>
+
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.querySelector(".nav-links");
+    
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+
+   
+    document.querySelector('a[href="#home"]').addEventListener('click', (event) => {
+      event.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>
