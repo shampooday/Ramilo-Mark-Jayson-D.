@@ -146,6 +146,13 @@ nav .hamburger .bar {
   font-weight: bold;
 }
 
+.card h3 {
+  padding: 10px 16px;
+  font-size: 1.0em;
+  color: white;
+  font-weight: bold;
+}
+
 .card p {
   padding: 10px 16px;
   color: white;
